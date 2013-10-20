@@ -30,7 +30,7 @@ module.exports = (grunt) ->
       compile:
         options:
           amd: true
-          templateBasePath: /templates/
+          templateBasePath: /templates\//
         files:
           'js/templates.js': 'templates/*.hbs'
     coffee:
