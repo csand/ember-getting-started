@@ -1,2 +1,2 @@
 require (require) ->
-  app = require 'app'
+  require 'router'
