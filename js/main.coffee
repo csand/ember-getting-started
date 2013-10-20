@@ -1,2 +1,3 @@
-require (require) ->
+define (require) ->
   require 'router'
+  require 'models'

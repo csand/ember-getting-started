@@ -1,3 +1,5 @@
 define (require) ->
   ember = require 'ember'
-  ember.Application.create()
+  window.Todos = ember.Application.create(
+    LOG_TRANSITIONS: true
+  )
