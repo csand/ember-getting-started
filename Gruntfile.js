@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     watch: {
       templates: {
         files: ['**/*.hbs'],
-        tasks: ['emberTemplates:compile'],
+        tasks: ['emberTemplates:compile', 'uglify:dev'],
         options: {spawn: false}
       },
       uglify: {
@@ -49,11 +49,12 @@ module.exports = function(grunt) {
     uglify: {
       dev: {
         options: {
-          mangle: false,
-          compress: false,
-          beautify: true,
-          preserveComments: 'all',
-          sourceMap: 'js/todos.js.map'
+          mangle: true,
+          compress: true,
+          preserveComments: false,
+          sourceMap: 'js/todos.js.map',
+          sourceMapPrefix: 1,
+          sourceMappingURL: 'todos.js.map'
         },
         files: {
           'js/todos.js': uglifyFiles
