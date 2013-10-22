@@ -1,7 +1,3 @@
-define(function(require) {
-  var app = require('app');
-
-  app.Router.map(function() {
-    this.resource('todos', {path: '/'});
-  });
+Todos.Router.map(function() {
+  this.resource('todos', {path: '/'});
 });

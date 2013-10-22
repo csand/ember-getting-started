@@ -1,4 +1,5 @@
 require.config({
+  baseUrl: '/js',
   paths: {
     lodash: 'lib/lodash',
     jquery: 'lib/jquery',

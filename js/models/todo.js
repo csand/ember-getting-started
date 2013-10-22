@@ -1,8 +1,4 @@
-require(function(require) {
-  var app;
-  return app = require('app');
+Todos.Todo = DS.Model.extend({
+  title: DS.attr('string'),
+  isCompleted: DS.attr('boolean')
 });
-
-/*
-//@ sourceMappingURL=todo.js.map
-*/
