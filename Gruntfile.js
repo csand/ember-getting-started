@@ -6,7 +6,9 @@ module.exports = function(grunt) {
     'js/templates.js',
     'js/application.js',
     'js/router.js',
-    'js/models/*.js'
+    'js/models/*.js',
+    'js/controllers/*.js',
+    'js/views/*.js'
   ];
   var config = {
     pkg: grunt.file.readJSON('package.json'),
@@ -37,12 +39,7 @@ module.exports = function(grunt) {
         options: {spawn: false}
       },
       uglify: {
-        files: [
-          'js/templates.js',
-          'js/application.js',
-          'js/router.js',
-          'js/models/*.js'
-        ],
+        files: uglifyFiles,
         tasks: ['uglify:dev']
       }
     },
