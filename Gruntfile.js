@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           amd: false,
           templateBasePath: /templates\//
         },
-        files: {'js/templates.js': 'templates/*.hbs'}
+        files: {'js/templates.js': 'templates/**/*.hbs'}
       }
     },
     copy: {
